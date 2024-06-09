@@ -1,71 +1,69 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+<section id="company-info">
+    <h2>About Us</h2>
+    <p id="companyDescription">Description of the company...</p>
+</section>
 
-    <section id="company-info">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a reputable company specializing in the buying and selling of vessels. With years of experience in the maritime industry, we have established ourselves as leaders in the market. Our team of experts is dedicated to providing top-notch services to our clients, ensuring seamless transactions and complete satisfaction.
-Whether you are looking to purchase a vessel or sell one from your fleet, we are here to assist you every step of the way. Our extensive network and industry knowledge enable us to offer competitive prices and find the perfect match for your needs.
-At our company, integrity, professionalism, and customer satisfaction are our top priorities. We strive to build long-lasting relationships with our clients based on trust, transparency, and mutual respect.
-    </p>
-        </div>
-    </section>
+<section id="services">
+    <h2>Our Services</h2>
+    <ul id="serviceList">
+        <!-- JavaScript will populate this list -->
+    </ul>
+</section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Brokerage Services</li>
-                <li>Vessel Listings and Marketplace</li>
-                <li>Consulting and Advisory</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <!-- Your portfolio content here -->
-        </div>
-    </section>
-
-    <section id="team">
-        <div class="container">
-            <h2>Our Team</h2>
-            <!-- Your team members' information here -->
-        </div>
-    </section>
-    <section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>For inquiries, please contact us:</p>
-        <ul>
-            <li>Phone: Your Phone Number</li>
-            <li>Email: Your Email Address</li>
-            <li>Address: Your Address</li>
-        </ul>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div id="portfolioItems">
+        <!-- JavaScript will populate this section -->
     </div>
 </section>
-  <footer>
-        <div class="container">
-            <p>&copy; 2024 SeaTradeBrokers. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<section id="team">
+    <h2>Our Team</h2>
+    <ul id="teamMembers">
+        <!-- JavaScript will populate this list -->
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Company Name. All rights reserved.</p>
+</footer>
+
+<script>
+    // JavaScript code here
+    document.getElementById('companyName').textContent = "Your Company Name";
+    document.getElementById('companyDescription').textContent = "Description of the company...";
+
+    var navLinks = document.getElementById('navLinks');
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section) {
+        var id = section.getAttribute('id');
+        var link = document.createElement('a');
+        link.setAttribute('href', '#' + id);
+        link.textContent = id.charAt(0).toUpperCase() + id.slice(1); // Capitalize first letter
+        navLinks.appendChild(link);
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+        // You can add AJAX request or any other action here
+    });
+</script>
