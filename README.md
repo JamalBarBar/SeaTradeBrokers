@@ -1,8 +1,6 @@
-markdown: GFM
-title: ''
-
 <head>
-    
+markdown: GFM
+title: ''   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Other meta tags and links can be added here -->
