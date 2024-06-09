@@ -1,5 +1,13 @@
-<html lang="en"> <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>Ship Marketplace</title>     <link rel="stylesheet" href="styles.css">     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> </head> <body>     <header>         <h></h>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatrade Brokers</title>
+    <!-- Other meta tags and links can be added here -->
+</head>
+<body>
+    <header>
         <h1>Ship Marketplace</h1>
     </header>
     <nav>
@@ -60,8 +68,6 @@
     </section>
     <footer>
         <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
-        
-        </p>
     </footer>
     <script src="script.js"></script>
 </body>
