@@ -35,7 +35,6 @@ Contact us today to explore our range of services and discover how SeaTradeBroke
         <p>Phone: ‭+971 52 652 2509‬</p>
         <p>Address: Λεωφόρος Ελευθερίου Βενιζέλου 297
 176 74 Kallithea Greece</p>
-    </section>
 
     </section>
 
