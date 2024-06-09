@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +8,9 @@
 <body>
     <header>
         <div class="container">
-            <h1>Company Name</h1>
+            <h1>SeaTradeBrokers</h1>
             <nav>
                 <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
                 <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -22,7 +20,10 @@
     <section id="company-info">
         <div class="container">
             <h2>About Us</h2>
-            <p>Description of the company...</p>
+            <p>We are a reputable company specializing in the buying and selling of vessels. With years of experience in the maritime industry, we have established ourselves as leaders in the market. Our team of experts is dedicated to providing top-notch services to our clients, ensuring seamless transactions and complete satisfaction.
+Whether you are looking to purchase a vessel or sell one from your fleet, we are here to assist you every step of the way. Our extensive network and industry knowledge enable us to offer competitive prices and find the perfect match for your needs.
+At our company, integrity, professionalism, and customer satisfaction are our top priorities. We strive to build long-lasting relationships with our clients based on trust, transparency, and mutual respect.
+    </p>
         </div>
     </section>
 
@@ -30,9 +31,9 @@
         <div class="container">
             <h2>Our Services</h2>
             <ul>
-                <li>Service 1</li>
-                <li>Service 2</li>
-                <li>Service 3</li>
+                <li>Brokerage Services</li>
+                <li>Vessel Listings and Marketplace</li>
+                <li>Consulting and Advisory</li>
             </ul>
         </div>
     </section>
