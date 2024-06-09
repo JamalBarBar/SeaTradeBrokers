@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ship Marketplace</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,18 +20,22 @@
         </ul>
     </nav>
     <section id="home">
-        <h2>Welcome to Ship Marketplace</h2>
-        <p>Your one-stop platform for buying and selling ships.</p>
+        <div class="hero">
+            <h2>Welcome to Ship Marketplace</h2>
+            <p>Your one-stop platform for buying and selling ships.</p>
+        </div>
     </section>
     <section id="buy">
         <h2>Buy a Ship</h2>
         <div class="ship-list">
             <div class="ship-item">
+                <img src="ship1.jpg" alt="Ship 1">
                 <h3>Ship 1</h3>
                 <p>Details about Ship 1.</p>
                 <button>Contact Seller</button>
             </div>
             <div class="ship-item">
+                <img src="ship2.jpg" alt="Ship 2">
                 <h3>Ship 2</h3>
                 <p>Details about Ship 2.</p>
                 <button>Contact Seller</button>
@@ -59,9 +64,16 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: contact@shipmarketplace.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Ship St, Port City, PC 12345</p>
     </section>
     <footer>
         <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
+        <p>Follow us: 
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+            <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </p>
     </footer>
     <script src="script.js"></script>
 </body>
