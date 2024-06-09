@@ -63,16 +63,13 @@
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: contact@shipmarketplace.com</p>
+        <p>Email: Info@seatradebrokers.com</p>
         <p>Phone: +123 456 7890</p>
         <p>Address: 123 Ship St, Port City, PC 12345</p>
     </section>
     <footer>
         <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
-        <p>Follow us: 
-            <a href="#"><i class="fa-brands fa-facebook"></i></a> 
-            <a href="#"><i class="fa-brands fa-twitter"></i></a> 
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        
         </p>
     </footer>
     <script src="script.js"></script>
