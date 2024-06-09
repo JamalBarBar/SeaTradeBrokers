@@ -1,10 +1,39 @@
-    <markdown> GFM
-<title> ''
+    <!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Other meta tags and links can be added here -->
+    <title>Seatrade Brokers</title>
+    <style>
+        body {
+            background-image: url('file:///Users/jamalmbarbar/Downloads/fcd72d87a498f52c0ed67b0e1b149c8e.jpg');
+            background-size: cover; /* Ensure the background covers the entire page */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            background-attachment: fixed; /* Keep the background fixed during scroll */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -67,6 +96,12 @@
         <p>Address: 123 Ship St, Port City, PC 12345</p>
     </section>
     <footer>
+        <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
         <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
