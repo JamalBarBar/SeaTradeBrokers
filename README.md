@@ -53,15 +53,15 @@ At our company, integrity, professionalism, and customer satisfaction are our to
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
+        <form id="contact-form" action="send_email.php" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
         </div>
     </section>
 
