@@ -49,23 +49,18 @@ At our company, integrity, professionalism, and customer satisfaction are our to
             <!-- Your team members' information here -->
         </div>
     </section>
-
     <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-        <form id="contact-form" action="send_email.php" method="POST">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-    <button type="submit">Submit</button>
-</form>
-        </div>
-    </section>
-
-    <footer>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please contact us:</p>
+        <ul>
+            <li>Phone: Your Phone Number</li>
+            <li>Email: Your Email Address</li>
+            <li>Address: Your Address</li>
+        </ul>
+    </div>
+</section>
+  <footer>
         <div class="container">
             <p>&copy; 2024 SeaTradeBrokers. All rights reserved.</p>
         </div>
