@@ -3,116 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Template</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 50px 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Company Name</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1 id="companyName"></h1>
-        <nav id="navLinks"></nav>
+        <h1>Welcome to Our Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#what-we-do">What We Do</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="company-info">
+    <section id="about">
         <h2>About Us</h2>
-        <p id="companyDescription">Description of the company...</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul id="serviceList">
-            <!-- JavaScript will populate this list -->
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div id="portfolioItems">
-            <!-- JavaScript will populate this section -->
-        </div>
-    </section>
-
-    <section id="team">
-        <h2>Our Team</h2>
-        <ul id="teamMembers">
-            <!-- JavaScript will populate this list -->
-        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod varius enim, eget sagittis risus. Nullam eu nisl mauris.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
+        <p>Email: info@example.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </section>
+
+    <section id="what-we-do">
+        <h2>What We Do</h2>
+        <p>We provide innovative solutions for businesses in various industries. Our services include:</p>
+        <ul>
+            <li>Service/Product 1</li>
+            <li>Service/Product 2</li>
+            <li>Service/Product 3</li>
+        </ul>
     </section>
 
     <footer>
         <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
-
-    <script>
-        // JavaScript code here
-        document.getElementById('companyName').textContent = "Your Company Name";
-        document.getElementById('companyDescription').textContent = "Description of the company...";
-
-        var navLinks = document.getElementById('navLinks');
-        var sections = document.querySelectorAll('section');
-        sections.forEach(function(section) {
-            var id = section.getAttribute('id');
-            var link = document.createElement('a');
-            link.setAttribute('href', '#' + id);
-            link.textContent = id.charAt(0).toUpperCase() + id.slice(1); // Capitalize first letter
-            navLinks.appendChild(link);
-        });
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            console.log('Name:', name);
-            console.log('Email:', email);
-            console.log('Message:', message);
-            // You can add AJAX request or any other action here
-        });
-    </script>
 </body>
 </html>
