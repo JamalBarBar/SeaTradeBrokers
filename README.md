@@ -3,133 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Info</title>
+    <title>Company Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        p {
+            margin-bottom: 50px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Company</h1>
+        <p>About our company...</p>
+    </header>
+
+    <section id="vessels">
+        <h2>Vessels for Sale</h2>
+        <ul>
+            <li>Vessel 1</li>
+            <li>Vessel 2</li>
+            <li>Vessel 3</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <a href="#vessels">Vessels for Sale</a>
+        <a href="#contact">Contact Us</a>
+    </footer>
+
     <style>
         body {
             background-image: url('wallpaper1.jpg');
             background-size: cover;
-            font-family: Arial, sans-serif;
             color: white;
-            text-align: center;
-            padding: 20px;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to Our Company</h1>
-    <p>About our company...</p>
-    <nav>
-        <a href="vessels.html">Vessels for Sale</a> | 
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vessels for Sale</title>
-    <style>
-        body {
+        #vessels {
             background-image: url('wallpaper2.jpg');
             background-size: cover;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 100px 0;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>Vessels for Sale</h1>
-    <ul>
-        <li>Vessel 1</li>
-        <li>Vessel 2</li>
-        <li>Vessel 3</li>
-    </ul>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body {
+        #contact {
             background-image: url('wallpaper3.jpg');
             background-size: cover;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            padding: 20px;
+            padding: 100px 0;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        form {
-            display: inline-block;
-            text-align: left;
-        }
-        label, input, textarea {
-            display: block;
-            margin: 10px 0;
-        }
-        input, textarea {
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
             width: 100%;
-        }
-        input[type="submit"] {
-            width: auto;
+            background-color: #222;
+            padding: 10px 0;
+            z-index: 1000;
         }
     </style>
-</head>
-<body>
-    <h1>Contact Us</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea>
-        <input type="submit" value="Submit">
-    </form>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="vessels.html">Vessels for Sale</a>
-    </nav>
 </body>
 </html>
