@@ -1,109 +1,135 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seatrade Brokers</title>
+    <title>Company Info</title>
     <style>
         body {
-            background-image: url('file:///Users/jamalmbarbar/Downloads/fcd72d87a498f52c0ed67b0e1b149c8e.jpg');
-            background-size: cover; /* Ensure the background covers the entire page */
-            background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Do not repeat the background image */
-            background-attachment: fixed; /* Keep the background fixed during scroll */
+            background-image: url('wallpaper1.jpg');
+            background-size: cover;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, section, footer {
-            background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+            color: white;
+            text-align: center;
             padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            color: #000;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ship Marketplace</h1>
-    </header>
+    <h1>Welcome to Our Company</h1>
+    <p>About our company...</p>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#buy">Buy</a></li>
-            <li><a href="#sell">Sell</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="vessels.html">Vessels for Sale</a> | 
+        <a href="contact.html">Contact Us</a>
     </nav>
-    <section id="home">
-        <div class="hero">
-            <h2>Welcome to Ship Marketplace</h2>
-            <p>Your one-stop platform for buying and selling ships.</p>
-        </div>
-    </section>
-    <section id="buy">
-        <h2>Buy a Ship</h2>
-        <div class="ship-list">
-            <div class="ship-item">
-                <img src="ship1.jpg" alt="Ship 1">
-                <h3>Ship 1</h3>
-                <p>Details about Ship 1.</p>
-                <button>Contact Seller</button>
-            </div>
-            <div class="ship-item">
-                <img src="ship2.jpg" alt="Ship 2">
-                <h3>Ship 2</h3>
-                <p>Details about Ship 2.</p>
-                <button>Contact Seller</button>
-            </div>
-            <!-- Add more ships as needed -->
-        </div>
-    </section>
-    <section id="sell">
-        <h2>Sell a Ship</h2>
-        <form id="sell-form">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="ship-name">Ship Name:</label>
-            <input type="text" id="ship-name" name="ship-name" required>
-            
-            <label for="details">Ship Details:</label>
-            <textarea id="details" name="details" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: Info@seatradebrokers.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Address: 123 Ship St, Port City, PC 12345</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
-
-        <p>&copy; 2024 Ship Marketplace. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vessels for Sale</title>
+    <style>
+        body {
+            background-image: url('wallpaper2.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vessels for Sale</h1>
+    <ul>
+        <li>Vessel 1</li>
+        <li>Vessel 2</li>
+        <li>Vessel 3</li>
+    </ul>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url('wallpaper3.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+        }
+        input, textarea {
+            width: 100%;
+        }
+        input[type="submit"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="vessels.html">Vessels for Sale</a>
+    </nav>
 </body>
 </html>
