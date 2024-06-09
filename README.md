@@ -69,7 +69,7 @@ At our company, integrity, professionalism, and customer satisfaction are our to
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Company Name. All rights reserved.</p>
+            <p>&copy; 2024 SeaTradeBrokers. All rights reserved.</p>
         </div>
     </footer>
 
