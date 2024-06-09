@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,9 +15,8 @@
 <body>
     <header>
         <!-- Add SeaTradeBrokers logo -->
-        <img src="SeaTradeBrokers Logo.jpeg" alt="SeaTradeBrokers Logo" class="logo">
-        
-        <!-- Navigation -->
+        <img src="SeaTradeBrokers%20Logo.jpeg" alt="SeaTradeBrokers Logo" class="logo">
+         <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="#about">About Us</a></li>
