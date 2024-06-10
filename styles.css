@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #1E2D3B; /* Dark blue-gray */
+    color: #FFFFFF; /* White text */
     padding: 20px 0;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF; /* White text */
     text-decoration: none;
 }
 
@@ -31,14 +31,14 @@ section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: #f9f9f9;
+    background-color: #E5E5E5; /* Light gray */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1E2D3B; /* Dark blue-gray */
+    color: #FFFFFF; /* White text */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -64,18 +64,18 @@ form input,
 form textarea {
     padding: 8px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC; /* Light gray border */
     transition: border-color 0.3s ease; /* Smooth transition for input border */
 }
 
 form input:focus,
 form textarea:focus {
-    border-color: #333; /* Change border color on focus */
+    border-color: #1E2D3B; /* Dark blue-gray border on focus */
 }
 
 form button {
-    background-color: #333;
-    color: white;
+    background-color: #1E2D3B; /* Dark blue-gray */
+    color: #FFFFFF; /* White text */
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -84,5 +84,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #555; /* Darken button color on hover */
+    background-color: #283A4E; /* Darken button color on hover */
 }
