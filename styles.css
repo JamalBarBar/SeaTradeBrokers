@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6; /* Improve readability */
+    color: #333; /* Set a default text color */
 }
 
 /* Header Styles */
@@ -30,12 +31,13 @@ nav ul li {
 nav ul li a {
     color: #FFFFFF; /* White text */
     text-decoration: none;
-    font-weight: bold; /* Make links stand out */
+    font-weight: 600; /* Slightly bolder links */
     transition: color 0.3s ease; /* Smooth transition for link color */
 }
 
-nav ul li a:hover {
-    color: #E5E5E5; /* Light gray on hover */
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #E5E5E5; /* Light gray on hover/focus */
 }
 
 /* Section Styles */
@@ -43,9 +45,9 @@ section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: #E5E5E5; /* Light gray */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #F9F9F9; /* Slightly lighter gray for better contrast */
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
 }
 
 /* Footer Styles */
@@ -53,39 +55,38 @@ footer {
     background-color: #1E2D3B; /* Dark blue-gray */
     color: #FFFFFF; /* White text */
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
 /* Form Styles */
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px; /* Slightly wider form */
     margin: 0 auto;
 }
 
-form label,
-form input,
-form textarea,
-form button {
-    margin-bottom: 10px;
+form label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels for better visibility */
 }
 
 form input,
 form textarea {
-    padding: 8px;
-    border-radius: 3px;
+    padding: 12px;
+    border-radius: 5px;
     border: 1px solid #CCCCCC; /* Light gray border */
-    transition: border-color 0.3s ease; /* Smooth transition for input border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 form input:focus,
 form textarea:focus {
     border-color: #1E2D3B; /* Dark blue-gray border on focus */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on focus */
     outline: none; /* Remove default outline */
 }
 
@@ -93,18 +94,21 @@ form button {
     background-color: #1E2D3B; /* Dark blue-gray */
     color: #FFFFFF; /* White text */
     border: none;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: background-color 0.3s ease; /* Smooth transition for button background */
-    font-weight: bold; /* Make button text stand out */
+    font-weight: bold; /* Bold button text */
 }
 
-form button:hover {
-    background-color: #283A4E; /* Darken button color on hover */
+form button:hover,
+form button:focus {
+    background-color: #283A4E; /* Darken button color on hover/focus */
 }
 
 /* Accessibility Enhancements */
-a:focus {
+a:focus,
+form button:focus {
     outline: 3px solid #1E2D3B; /* Add a focus outline for accessibility */
+    outline-offset: 2px; /* Space the outline slightly from the element */
 }
