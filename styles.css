@@ -1,9 +1,12 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Improve readability */
 }
 
+/* Header Styles */
 header {
     background-color: #1E2D3B; /* Dark blue-gray */
     color: #FFFFFF; /* White text */
@@ -11,9 +14,11 @@ header {
     text-align: center;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -25,17 +30,25 @@ nav ul li {
 nav ul li a {
     color: #FFFFFF; /* White text */
     text-decoration: none;
+    font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease; /* Smooth transition for link color */
 }
 
+nav ul li a:hover {
+    color: #E5E5E5; /* Light gray on hover */
+}
+
+/* Section Styles */
 section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     background-color: #E5E5E5; /* Light gray */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Footer Styles */
 footer {
     background-color: #1E2D3B; /* Dark blue-gray */
     color: #FFFFFF; /* White text */
@@ -44,8 +57,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -71,6 +86,7 @@ form textarea {
 form input:focus,
 form textarea:focus {
     border-color: #1E2D3B; /* Dark blue-gray border on focus */
+    outline: none; /* Remove default outline */
 }
 
 form button {
@@ -81,8 +97,14 @@ form button {
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.3s ease; /* Smooth transition for button background */
+    font-weight: bold; /* Make button text stand out */
 }
 
 form button:hover {
     background-color: #283A4E; /* Darken button color on hover */
+}
+
+/* Accessibility Enhancements */
+a:focus {
+    outline: 3px solid #1E2D3B; /* Add a focus outline for accessibility */
 }
